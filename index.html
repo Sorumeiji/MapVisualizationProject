@@ -13,6 +13,8 @@
 
 <body>
     <div id='map' style='width: 800px; height: 700px;'></div>
+    <div id="container" style='width: 800px; height: 700px;'></div>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoic29ydW1laWppIiwiYSI6ImNrY2dldnR2NjBhZHozMXM4amw2cGhtbTYifQ.BuE6BIuEIRrTX4KmJDconw';
         var map = new mapboxgl.Map({
@@ -55,6 +57,17 @@
             });
         });
     </script>
+    <script>
+        Highcharts.chart('container', {
+            chart: {
+                type: 'area'
+            },
+            subtitle: {
+                text: '',
+            }
+        });
+    </script>
+
 </body>
 
 </html>

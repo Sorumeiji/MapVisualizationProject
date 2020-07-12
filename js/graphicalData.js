@@ -134,13 +134,4 @@ function displayMapbox() {
             }
         });
     });
-
-    Highcharts.chart('container', {
-        chart: {
-            type: 'area'
-        },
-        subtitle: {
-            text: '',
-        }
-    })
 };

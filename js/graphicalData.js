@@ -4,6 +4,8 @@ const publicTransit = [];
 const walkData = [];
 var obj;
 
+displayMapbox();
+
 fetch('https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-tracts.json')
     .then(response => response.json()).then(data => obj = data).then(() => generateData(obj));
 
@@ -21,7 +23,7 @@ function generateData(data) {
 }
 
 function displayChart() {
-    Highcharts.chart('container', {
+    Highcharts.chart('graphicalMap', {
         chart: {
             type: 'area'
         },
@@ -88,5 +90,57 @@ function displayChart() {
             name: 'Population of Commute by walking',
             data: walkData
         }]
+    })
+};
+
+function displayMapbox() {
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic29ydW1laWppIiwiYSI6ImNrY2dldnR2NjBhZHozMXM4amw2cGhtbTYifQ.BuE6BIuEIRrTX4KmJDconw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/sorumeiji/ckcglnoah14t71imkwrjbb4ls', // stylesheet location
+        center: [-94.5525170767784, 38.9905144745217], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+    map.on('load', function () {
+        map.addSource('neighborhoods', {
+            'type': 'geojson',
+            'data': 'https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-neighborhoods.json',
+        });
+        map.addSource('tracts', {
+            'type': 'geojson',
+            'data': 'https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-neighborhoods.json',
+        });
+
+        map.addLayer({
+            'id': 'neighborhoods',
+            'type': 'fill',
+            'source': 'neighborhoods',
+            'layout': {},
+            'paint': {
+                'fill-color': '#203354',
+                'fill-opacity': 0.4
+            }
+        });
+        map.addLayer({
+            id: 'tracts',
+            type: 'circle',
+            source: 'tracts',
+            paint: {
+                'circle-radius': 3,
+                'circle-color': '#223b53',
+                'circle-stroke-color': 'white',
+                'circle-stroke-width': 1,
+                'circle-opacity': 0.5
+            }
+        });
+    });
+
+    Highcharts.chart('container', {
+        chart: {
+            type: 'area'
+        },
+        subtitle: {
+            text: '',
+        }
     })
 };

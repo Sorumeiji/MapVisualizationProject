@@ -1,82 +1,53 @@
-let requestURL = 'https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-neighborhoods.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
+const driveAlone = [];
+const carPool = [];
+const publicTransit = [];
+const walkData = [];
+var obj;
 
-request.onload = function () {
+fetch('https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-tracts.json')
+    .then(response => response.json()).then(data => obj = data).then(() => generateData(obj));
 
-    const getResponse = request.response;
+fetch('https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-neighborhoods.json')
+    .then(response => response.json()).then(data => obj = data).then(() => generateData(obj)).then(() => displayChart());
 
 
-    var populatedriveAlone = function (jsonObj) {
-        const driveAlone = new Array();
-        for (var i = 0; i < jsonObj["features"].length; i++) {
-            driveAlone.push(jsonObj.features[i].properties["pop-commute-drive_alone"]);
-        }
-
-        return driveAlone;
+function generateData(data) {
+    for (var i = 0; i < data["features"].length; i++) {
+        driveAlone.push(data["features"][i].properties["pop-commute-drive_alone"]);
+        carPool.push(data["features"][i].properties["pop-commute-drive_carpool"]);
+        publicTransit.push(data["features"][i].properties["pop-commute-public_transit"]);
+        walkData.push(data["features"][i].properties["pop-commute-walk"]);
     }
+}
 
-
-
-    var populateDriveCarpool = function (jsonObj) {
-        const carPool = new Array();
-        for (var i = 0; i < jsonObj["features"].length; i++) {
-            carPool.push(jsonObj.features[i].properties["pop-commute-drive_alone"]);
-        }
-
-        return carPool;
-    };
-
-    var populatePublicTransit = function (jsonObj) {
-        const PublicTransit = new Array();
-        for (var i = 0; i < jsonObj["features"].length; i++) {
-            PublicTransit.push(jsonObj.features[i].properties["pop-commute-drive_alone"]);
-        }
-
-        return PublicTransit;
-    };
-
-    var populateWalkData = function (jsonObj) {
-        const WalkData = new Array();
-        for (var i = 0; i < jsonObj["features"].length; i++) {
-            WalkData.push(jsonObj.features[i].properties["pop-commute-drive_alone"]);
-        }
-
-        return WalkData;
-    };
-
-
+function displayChart() {
     Highcharts.chart('container', {
         chart: {
-            type: 'line'
+            type: 'area'
         },
         accessibility: {
-            description: ' '
+            description: 'Image description: An chart that displays data on different ways on how population commutes'
         },
         title: {
-            text: 'US and USSR nuclear stockpiles'
+            text: 'Commuter population attributes'
         },
         subtitle: {
-            text: 'Sources: <a href="https://thebulletin.org/2006/july/global-nuclear-stockpiles-1945-2006">' +
-                'thebulletin.org</a> &amp; <a href="https://www.armscontrol.org/factsheets/Nuclearweaponswhohaswhat">' +
-                'armscontrol.org</a>'
+            text: 'Data taken from neighborhoods around the Kansas City Kansas Area'
         },
         xAxis: {
             allowDecimals: false,
             labels: {
                 formatter: function () {
-                    return this.value; // clean, unformatted number for year
+                    return this.value;
                 }
             },
             accessibility: {
-                rangeDescription: 'Range: 1940 to 2017.'
+                rangeDescription: 'Range: 0k to 4k.'
             }
         },
         yAxis: {
             title: {
-                text: 'Nuclear weapon states'
+                text: 'Population'
             },
             labels: {
                 formatter: function () {
@@ -85,15 +56,15 @@ request.onload = function () {
             }
         },
         tooltip: {
-            pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+            pointFormat: '{series.name}  <b>{point.y:,.0f}</b><br/>  {point.x}'
         },
         plotOptions: {
             area: {
-                pointStart: 1940,
+                pointStart: 0,
                 marker: {
                     enabled: false,
                     symbol: 'circle',
-                    radius: 2,
+                    radius: 10,
                     states: {
                         hover: {
                             enabled: true
@@ -104,18 +75,18 @@ request.onload = function () {
         },
         series: [{
             name: 'Population of Commute by driving alone',
-            data: populatedriveAlone(getResponse)
+            data: driveAlone
         },
         {
             name: 'Population of Commute by carpool',
-            data: populateDriveCarpool(getResponse)
+            data: carPool
         },
         {
             name: 'Population of Commute by public transit',
-            data: populatePublicTransit(getResponse)
+            data: publicTransit
         }, {
             name: 'Population of Commute by walking',
-            data: populateWalkData(getResponse)
+            data: walkData
         }]
     })
 };

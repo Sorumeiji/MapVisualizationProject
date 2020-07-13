@@ -2,15 +2,23 @@ const driveAlone = [];
 const carPool = [];
 const publicTransit = [];
 const walkData = [];
+var getReponse;
 var obj;
 
 displayMapbox();
 
 fetch('https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-tracts.json')
-    .then(response => response.json()).then(data => obj = data).then(() => generateData(obj));
+    .then(response => getReponse = response)
+    .then(() => testReponseIsSuccessful(getReponse))
+    .then(data => obj = data)
+    .then(() => generateData(obj));
 
 fetch('https://raw.githubusercontent.com/mysidewalk/interview/master/frontend-engineer/kc-neighborhoods.json')
-    .then(response => response.json()).then(data => obj = data).then(() => generateData(obj)).then(() => displayChart());
+    .then(response => getReponse = response)
+    .then(() => testReponseIsSuccessful(getReponse))
+    .then(data => obj = data)
+    .then(() => generateData(obj))
+    .then(() => displayChart());
 
 
 function generateData(data) {
@@ -19,6 +27,21 @@ function generateData(data) {
         carPool.push(data["features"][i].properties["pop-commute-drive_carpool"]);
         publicTransit.push(data["features"][i].properties["pop-commute-public_transit"]);
         walkData.push(data["features"][i].properties["pop-commute-walk"]);
+    }
+}
+
+function testReponseIsSuccessful(reponse) {
+    if (reponse.ok) {
+        console.log("Response for " + reponse.url + " was successful");
+        console.log("Repsonse - " + reponse.statusText);
+
+
+        return reponse.json();
+    }
+    else {
+        console.log("Response for " + reponse.url + " failed");
+        console.log("Response - " + reponse.statusText)
+        error.innerHTML = '<h2 class="errorMessage"> ERROR: Response ' + reponse.url + ' failed.</h2>';
     }
 }
 

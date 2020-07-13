@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #5ea4c0;
+}
+
+::selection {
+    color: #fff;
+    background-color: #5ea4c0;
+}
+
+html {
+    font-size: 0.875em; // 14px
+}
+
+body {
+    background-color: #fff7f7;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #5ea4c0;
+}
+
+p {
+    margin-top: 1em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+
+ul>li {
+    list-style: none;
+    text-decoration-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+    margin-right: 1em;
+    ;
+}
+
+nav {
+    display: flex;
+    flex-flow: column;
+    padding: 1em;
+    justify-content: flex-start;
+    background-color: #24292e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    flex: 1 1 2em;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.mapDivide {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding: 2em;
+}
+
+
+
+
+
+#error {
+    color: #ff0033;
+}
+
+
+
+#map,
+#graphicalMap {
+    padding: 2;
+    max-width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    border: 1px solid #24292e;
+}

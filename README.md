@@ -72,7 +72,7 @@ If the reponse fails, and error message appears in red.
 
 ## Language and tools
 
-HTML5, CSS3/SCSS, HighCharts.JS, MapBo.JS, Vanilla JavaScript
+HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
 
 ## Contact
 

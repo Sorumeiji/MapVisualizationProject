@@ -67,9 +67,13 @@ If the reponse fails, a error message appears in red, and a failed response is t
 
 1. Download this repository.
 
+<br>
+<br>
 
-![image]https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/fc56THwJbH.gif
+![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/fc56THwJbH.gif)
 
+<br>
+<br>
 
 2. Unzip the zip file into a location of choice.
 3. In the folder, open Index.html in your favorite browser.

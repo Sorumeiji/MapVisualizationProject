@@ -76,8 +76,14 @@ function testReponseIsSuccessful(reponse) {
 <br>
 
 ### 2. Unzip the zip file into a location of choice.
+
+<br>
+<br>
+
 ### 3. In the folder, open Index.html in your favorite browser.
 
+<br>
+<br>
 
 ## Language and tools
 

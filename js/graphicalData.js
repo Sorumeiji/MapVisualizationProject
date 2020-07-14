@@ -45,6 +45,9 @@ function testReponseIsSuccessful(reponse) {
     }
 }
 
+
+// Displays the High Charts Visual
+
 function displayChart() {
     Highcharts.chart('graphicalMap', {
         chart: {
@@ -115,6 +118,9 @@ function displayChart() {
         }]
     })
 };
+
+
+// Displays the MapBox Visual
 
 function displayMapbox() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic29ydW1laWppIiwiYSI6ImNrY2dldnR2NjBhZHozMXM4amw2cGhtbTYifQ.BuE6BIuEIRrTX4KmJDconw';

@@ -77,7 +77,9 @@ Using Locally
 
 2. Unzip the zip file into a location of choice. If you need a file archiver tool
    I recommend 7-zip (https://www.7-zip.org/)
-
+   
+ ![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/6sOpMd7Q5O.gif)
+ 
 <br>
 <br>
 

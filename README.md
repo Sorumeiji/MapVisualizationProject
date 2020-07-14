@@ -85,6 +85,8 @@ If the reponse fails, a error message appears in red, and a failed response is t
 
 3. In the folder, open Index.html in your favorite browser.
 
+<img src="https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/zfin3Ehpay.gif" width=600 align=center>
+
 <br>
 <br>
 

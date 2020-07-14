@@ -7,8 +7,10 @@ A visual of information that shows a representation of neighborhood population w
 
 <http://kalebberry.com/MapVisualizationProject/>
 
+<br>
+<br>
 
-Testing the Map Visualization Project
+## Testing the Map Visualization Project
 
 <br>
 <br>
@@ -45,7 +47,7 @@ One can view the success of the response in the console.
 <br>
 <br>
 
-![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/NrSqIRx7Ie.gif)
+<img src="https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/NrSqIRx7Ie.gif" width=600 align=center>
 
 <br>
 <br>
@@ -55,22 +57,20 @@ If the reponse fails, a error message appears in red, and a failed response is t
 <br>
 <br>
 
-![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/DSxCHBWnv6.gif)
+<img src="https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/DSxCHBWnv6.gif" width=600 align=center>
 
 
 <br>
 <br>
-<br>
-<br>
 
-Using Locally
+## Using Locally
 
 1. Download this repository.
 
 <br>
 <br>
 
-![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/fc56THwJbH.gif)
+<img src="https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/fc56THwJbH.gif" width=600 align=center>
 
 <br>
 <br>
@@ -78,7 +78,7 @@ Using Locally
 2. Unzip the zip file into a location of choice. If you need a file archiver tool
    I recommend 7-zip (https://www.7-zip.org/)
    
- ![image](https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/6sOpMd7Q5O.gif)
+ <img src="https://raw.githubusercontent.com/Sorumeiji/MapVisualizationProject/master/images/6sOpMd7Q5O.gif" width=600 align=center>
  
 <br>
 <br>
@@ -90,19 +90,20 @@ Using Locally
 
 ## Language and tools
 
-
-### HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
+HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
 
 <br>
 <br>
 
 ## Contact
 
-### If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
+If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
+
 <br>
 <br>
+
 ## License
 
-### This project uses the following license: [MIT](https://opensource.org/licenses/MIT).
+This project uses the following license: [MIT](https://opensource.org/licenses/MIT).
 <br>
 <br>

@@ -67,7 +67,7 @@ If the reponse fails, and error message appears in red.
 
 1. Download this repository.
 2. Unzip the zip file into a location of choice.
-3. Open Index.html in your favorite browser.
+3. In the folder, open Index.html in your favorite browser.
 
 
 ## Language and tools

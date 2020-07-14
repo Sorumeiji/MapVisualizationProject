@@ -50,7 +50,7 @@ One can view the success of the response in the console.
 <br>
 <br>
 
-If the reponse fails, and error message appears in red.
+If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
 
 <br>
 <br>

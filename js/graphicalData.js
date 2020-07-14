@@ -152,11 +152,11 @@ function displayMapbox() {
         });
         map.addLayer({
             id: 'tracts',
-            type: 'circle',
+            type: 'fill',
             source: 'tracts',
             paint: {
                 'circle-radius': 3,
-                'circle-color': '#223b53',
+                'circle-color': '#ADFF2F',
                 'circle-stroke-color': 'white',
                 'circle-stroke-width': 1,
                 'circle-opacity': 0.5

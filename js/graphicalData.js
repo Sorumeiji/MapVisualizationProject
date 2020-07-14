@@ -152,7 +152,7 @@ function displayMapbox() {
         });
         map.addLayer({
             id: 'tracts',
-            type: 'fill',
+            type: 'circle',
             source: 'tracts',
             paint: {
                 'circle-radius': 3,

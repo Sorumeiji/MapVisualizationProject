@@ -37,6 +37,13 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.legend {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 3em;
+}
+
 ul {
   display: flex;
   width: 90%;
@@ -82,6 +89,8 @@ nav {
 
 #error {
   color: #ff0033;
+  text-align: center;
+  padding: 2em;
 }
 
 #map,
@@ -92,5 +101,7 @@ nav {
   margin: 0 auto;
   border: 1px solid #24292e;
 }
+
+/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

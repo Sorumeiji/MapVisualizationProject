@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 0.875em; // 14px
+    font-size: 0.875em;
 }
 
 body {
@@ -34,7 +34,14 @@ p {
     margin-top: 1em;
     font-size: 1.25em;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+.legend {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 3em;
 }
 
 ul {
@@ -43,7 +50,6 @@ ul {
     margin: auto;
 }
 
-
 ul>li {
     list-style: none;
     text-decoration-style: none;
@@ -51,7 +57,6 @@ ul>li {
     font-size: 1em;
     color: #fff;
     margin-right: 1em;
-    ;
 }
 
 nav {
@@ -68,7 +73,7 @@ nav {
 
 .logo {
     flex: 1 1 2em;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
 }
 
 .content {
@@ -82,15 +87,11 @@ nav {
     padding: 2em;
 }
 
-
-
-
-
 #error {
     color: #ff0033;
+    text-align: center;
+    padding: 2em;
 }
-
-
 
 #map,
 #graphicalMap {
@@ -100,3 +101,5 @@ nav {
     margin: 0 auto;
     border: 1px solid #24292e;
 }
+
+/*# sourceMappingURL=main.css.map */

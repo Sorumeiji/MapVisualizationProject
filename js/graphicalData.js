@@ -57,7 +57,7 @@ function displayChart() {
             text: 'Commuter population attributes'
         },
         subtitle: {
-            text: 'Data taken from neighborhoods around the Kansas City Kansas Area'
+            text: 'Data taken from neighborhoods and tracts around the Kansas City area'
         },
         xAxis: {
             allowDecimals: false,

@@ -63,7 +63,7 @@ If the reponse fails, a error message appears in red, and a failed response is t
 <br>
 <br>
 
-## Using The Map Visualization Project
+## Using The Map Visualization Project Locally
 
 1. Download this repository.
 

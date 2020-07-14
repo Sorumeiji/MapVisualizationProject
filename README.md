@@ -82,11 +82,15 @@ function testReponseIsSuccessful(reponse) {
 ## Language and tools
 
 ### HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
-
+<br>
+<br>
 ## Contact
 
 ### If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
-
+<br>
+<br>
 ## License
 
 ### This project uses the following license: [MIT](https://opensource.org/licenses/MIT).
+<br>
+<br>

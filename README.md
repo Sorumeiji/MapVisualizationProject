@@ -13,8 +13,8 @@ A visual of information that shows a representation of neighborhood population w
 <br>
 <br>
 
-Testing the Map Visualization Project is done by testing the
-response request before the data collection.
+### Testing the Map Visualization Project is done by testing the
+### response request before the data collection.
 
 <br>
 <br>
@@ -40,7 +40,7 @@ function testReponseIsSuccessful(reponse) {
 <br>
 
 
-One can view the success of the response in the console. 
+### One can view the success of the response in the console. 
 
 <br>
 <br>
@@ -50,7 +50,7 @@ One can view the success of the response in the console.
 <br>
 <br>
 
-If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
+### If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
 
 <br>
 <br>
@@ -65,7 +65,7 @@ If the reponse fails, a error message appears in red, and a failed response is t
 
 ## Using Locally
 
-1. Download this repository.
+### 1. Download this repository.
 
 <br>
 <br>
@@ -75,18 +75,18 @@ If the reponse fails, a error message appears in red, and a failed response is t
 <br>
 <br>
 
-2. Unzip the zip file into a location of choice.
-3. In the folder, open Index.html in your favorite browser.
+### 2. Unzip the zip file into a location of choice.
+### 3. In the folder, open Index.html in your favorite browser.
 
 
 ## Language and tools
 
-HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
+### HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
 
 ## Contact
 
-If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
+### If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
 
 ## License
 
-This project uses the following license: [MIT](https://opensource.org/licenses/MIT).
+### This project uses the following license: [MIT](https://opensource.org/licenses/MIT).

@@ -8,13 +8,13 @@ A visual of information that shows a representation of neighborhood population w
 <http://kalebberry.com/MapVisualizationProject/>
 
 
-## Testing the Map Visualization Project
+Testing the Map Visualization Project
 
 <br>
 <br>
 
-### Testing the Map Visualization Project is done by testing the
-### response request before the data collection.
+Testing the Map Visualization Project is done by testing the
+response request before the data collection.
 
 <br>
 <br>
@@ -40,7 +40,7 @@ function testReponseIsSuccessful(reponse) {
 <br>
 
 
-### One can view the success of the response in the console. 
+One can view the success of the response in the console. 
 
 <br>
 <br>
@@ -50,7 +50,7 @@ function testReponseIsSuccessful(reponse) {
 <br>
 <br>
 
-### If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
+If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
 
 <br>
 <br>
@@ -63,9 +63,9 @@ function testReponseIsSuccessful(reponse) {
 <br>
 <br>
 
-## Using Locally
+Using Locally
 
-### 1. Download this repository.
+1. Download this repository.
 
 <br>
 <br>
@@ -75,21 +75,25 @@ function testReponseIsSuccessful(reponse) {
 <br>
 <br>
 
-### 2. Unzip the zip file into a location of choice.
+2. Unzip the zip file into a location of choice. If you need a file archiver tool
+   I recommend 7-zip (https://www.7-zip.org/)
 
 <br>
 <br>
 
-### 3. In the folder, open Index.html in your favorite browser.
+3. In the folder, open Index.html in your favorite browser.
 
 <br>
 <br>
 
 ## Language and tools
 
+
 ### HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
+
 <br>
 <br>
+
 ## Contact
 
 ### If you want to contact me you can reach me at <kaleb.berry@outlook.com>.

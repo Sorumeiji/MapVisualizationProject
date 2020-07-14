@@ -70,8 +70,6 @@ If the reponse fails, and error message appears in red.
 3. Open Index.html in your favorite browser.
 
 
-Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
 ## Language and tools
 
 HTML5, CSS3/SCSS, JavaScript
@@ -82,4 +80,4 @@ If you want to contact me you can reach me at <kaleb.berry@outlook.com>.
 
 ## License
 
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [MIT](https://opensource.org/licenses/MIT).

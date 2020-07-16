@@ -52,7 +52,7 @@ One can view the success of the response in the console.
 <br>
 <br>
 
-If the reponse fails, a error message appears in red, and a failed response is thrown in the console.
+If the reponse fails, an error message appears in red, and a failed response is thrown in the console.
 
 <br>
 <br>
@@ -90,7 +90,7 @@ If the reponse fails, a error message appears in red, and a failed response is t
 <br>
 <br>
 
-## Language and tools
+## Languages and tools
 
 HTML5, CSS3/SCSS, HighCharts.JS, MapBox.JS, Vanilla JavaScript
 

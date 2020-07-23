@@ -1,4 +1,4 @@
-# :octocat: Map Visualization Project:octocat:
+# :octocat: Map Visualization Project :octocat:
 
 A visual of information that shows a representation of neighborhood population with tracs displaying different ways of communting in Kansas City.
 
